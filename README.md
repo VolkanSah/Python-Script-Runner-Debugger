@@ -1,5 +1,5 @@
 # Python Script Runner & Debugger
-This Python script is designed to run other Python scripts, logging both errors and resource usage. It was developed as a convenient tool while debugging a Python-based GUI for managing UFW (Uncomplicated Firewall) rules.
+This Python script is designed to run other Python scripts, logging both errors and resource usage. It was developed as a convenient tool while debugging a Python-based GUI for managing some stuff.
 
 ## Features
 - Runs Python scripts and captures any error output
