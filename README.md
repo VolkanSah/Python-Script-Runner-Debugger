@@ -19,4 +19,4 @@ This script emerged from a collaborative debugging session with an AI developed 
 Thus, ChatGPT and I decided to develop this script runner and debugger, and share it with the broader community. We sincerely hope that this tool will assist other developers in saving time and avoiding headaches while debugging their Python scripts.
 
 ## Note 
-It is cool, ChatGPT want find solutions for you, so the credits goes to ChatGPT4from OpenAI not to me!
+It is cool, ChatGPT want find solutions for you, so the credits goes to ChatGPT4 from OpenAI not to me 💝
