@@ -1,4 +1,4 @@
-# Python Script Runner & Debugger
+# Python Script Runner & Debugger (V2.0)
 
 This Python script is designed to run other Python scripts, logging both errors and resource usage. It was developed during a collaborative debugging session with OpenAI's ChatGPT and my new ChatGPT4 Plugin [ChatGPT-ShellMaster](https://github.com/VolkanSah/ChatGPT-ShellMaster). The initial goal was to troubleshoot a Python-based GUI application. The tool proved so useful that we decided to package it and share it with the wider community.
 
