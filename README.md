@@ -1,22 +1,25 @@
 # Python Script Runner & Debugger
-This Python script is designed to run other Python scripts, logging both errors and resource usage. It was developed during a collaborative debugging session with OpenAI's ChatGPT and my new ChatGPT4 Plugin [ChatGPT-ShellMaster](https://github.com/VolkanSah/ChatGPT-ShellMaster). The goal was to troubleshoot a Python-based GUI application. The tool proved to be so useful, that we decided to package it up and share it with the wider community. We hope this tool can be of use to other developers out there, saving them some time and headaches when debugging their Python scripts.
+
+This Python script is designed to run other Python scripts, logging both errors and resource usage. It was developed during a collaborative debugging session with OpenAI's ChatGPT and my new ChatGPT4 Plugin [ChatGPT-ShellMaster](https://github.com/VolkanSah/ChatGPT-ShellMaster). The initial goal was to troubleshoot a Python-based GUI application. The tool proved so useful that we decided to package it and share it with the wider community.
 
 ## Features
-- Runs Python scripts and captures any error output
-- Logs the command that failed, exit code, standard output, and standard error if a script fails
-- Logs CPU time (user + system) and memory usage
+- Executes Python scripts and captures error output.
+- Logs the command that failed, exit code, standard output, and standard error if a script fails.
+- Logs CPU time (user + system) and memory usage.
+
 ## Usage
-- Install the required Python packages: subprocess and resource are part of the Python Standard Library, and logging is used for logging errors and resource usage.
-- Replace 'your_script.py' in the line python_script = 'your_script.py' with the path to the Python script you want to run.
+1. **Install Requirements**: No additional packages are needed as `subprocess`, `resource`, and `logging` are part of the Python Standard Library.
+2. **Replace Script Path**: Replace `'your_script.py'` in the line `python_script = 'your_script.py'` with the path to the Python script you want to run.
+3. **Run the Script**:
+    ```shell
+    python3 pylog.py
+    ```
 
-Run this script: 
-```shell
-python3 pylog.py
-```
 ## Background
-This script emerged from a collaborative debugging session with an AI developed by OpenAI, known as ChatGPT. The initial goal was to help resolve syntax errors that were occurring in a Python-based GUI for managing stuff/ rules. As we delved into the issue, we recognized that a tool for running Python scripts and simultaneously logging both errors and resource usage could be tremendously beneficial to many developers. So we didn`t stop to think and create this simple script for you all 😄 
+This script emerged from a collaborative debugging session with ChatGPT, an AI developed by OpenAI. The initial goal was to resolve syntax errors in a Python-based GUI for managing various tasks. As we worked through the issue, we realized that a tool for running Python scripts while logging errors and resource usage could be incredibly beneficial to many developers.
 
-Thus, ChatGPT and I decided to develop this script runner and debugger, and share it with the broader community. We sincerely hope that this tool will assist other developers in saving time and avoiding headaches while debugging their Python scripts.
+Thus, ChatGPT and I decided to develop this script runner and debugger and share it with the broader community. We sincerely hope this tool will help other developers save time and avoid headaches while debugging their Python scripts.
 
-## Note 
-It is cool, ChatGPT want find solutions for you, so the credits goes to ChatGPT4 from OpenAI not to me 💝
+## Note
+Credit for Version 1 of this tool goes to ChatGPT-4 from OpenAI for its invaluable assistance in finding solutions.
+Credits for Version 2 of this tool goes to **VolkanSah**
