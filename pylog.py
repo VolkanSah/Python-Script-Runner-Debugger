@@ -2,6 +2,7 @@ import logging
 import subprocess
 import sys
 import psutil
+import tkinter as tk
 from datetime import datetime
 from typing import Optional
 
@@ -53,11 +54,39 @@ def run_script(script_path: str, log_level: int = logging.DEBUG, log_file: str =
     log_resource_usage()
     logging.info(f"Finished script: {script_path} at {datetime.now()}")
 
-# Example of how this might be used in a game loop or main function
-def main():
-    # Run the game loop, periodically log resource usage
-    run_script('your_script.py')
+# Observer window to show real-time logs
+def open_observer_window():
+    observer_window = tk.Toplevel()
+    observer_window.title("Observer Window")
+    observer_window.geometry("600x400")
 
-# Call the main function if this script is executed directly
-if __name__ == '__main__':
+    log_display = tk.Text(observer_window, wrap='word', state='disabled')
+    log_display.pack(expand=True, fill='both')
+
+    # Function to update log display
+    def update_log_display():
+        log_display.configure(state='normal')
+        with open('debug.log', 'r') as f:
+            log_display.delete(1.0, tk.END)
+            log_display.insert(tk.END, f.read())
+        log_display.configure(state='disabled')
+        observer_window.after(1000, update_log_display)
+
+    update_log_display()
+
+# Main function to initialize the observer
+def main():
+    root = tk.Tk()
+    root.title("Debug Tool")
+    root.geometry("300x200")
+
+    start_button = tk.Button(root, text="Start Script", command=lambda: run_script('gui2.py'))
+    start_button.pack(pady=20)
+
+    observer_button = tk.Button(root, text="Open Observer", command=open_observer_window)
+    observer_button.pack(pady=20)
+
+    root.mainloop()
+
+if __name__ == "__main__":
     main()
