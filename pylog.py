@@ -155,7 +155,7 @@ class AdvancedDebugTool:
         pass
 
     def show_about(self):
-        messagebox.showinfo("About", "Advanced Debug Tool\nVersion 1.0\n\nCreated by Your Name")
+        messagebox.showinfo("About", "Advanced Debug Tool\nVersion 3.1\n\nCreated by Volkan Kücükbudak")
 
 def main():
     root = tk.Tk()
